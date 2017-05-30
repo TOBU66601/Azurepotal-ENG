@@ -1,0 +1,96 @@
+﻿@charset "utf-8";
+/*写真部分*/
+#photo {
+    margin: auto;
+    text-align: center;
+}
+
+    #photo img {
+        width: 70%;
+    }
+
+    #photo p {
+        font-family: Meiryo;
+    }
+
+#account {
+    display: inline;
+    margin: auto;
+}
+
+#account2{
+    text-align:center;
+
+}
+
+#news{
+display:inline-block;
+}
+
+#fb{
+    display:inline-block;
+}
+
+#googlead {
+    margin: auto;
+    text-align: center;
+}
+
+#Websites {
+    width: 95%;
+    margin: auto;
+}
+
+#Contact {
+    width: 90%;
+    margin: auto;
+}
+
+#w3cgoukaku p {
+    text-align: right;
+}
+
+@font-face {
+    font-family: MyyugoGothic;
+    font-weight: normal;
+    src: local(YuGothic-Medium), local("Yu Gothic Medium");
+}
+
+#Smart p{
+    display: none;
+}
+
+#Smart{
+    display:none;
+}
+
+@media screen and (max-width:480px) {
+
+    #pro {
+        display: none;
+    }
+
+    #Contact {
+        display: none;
+        
+    }
+    #Smart p{
+        display:block;
+    }
+
+    #Smart{
+        display:block;
+    }
+}
+
+/*Windows Vista*/
+#Winvista{
+    margin:auto;
+    width:70%;
+    position:center;
+}
+
+/*過去のお知らせ*/
+#kako{
+    text-align:right;
+}
