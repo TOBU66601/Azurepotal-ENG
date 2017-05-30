@@ -1,0 +1,65 @@
+﻿/*フォント指定*/
+@font-face {
+    font-family: MyYuGothic;
+    font-weight: normal;
+    src: local(Yugothic-Medium), local("Yu Gothic Medium") /*Chrome向け*/
+}
+
+@font-face {
+    font-family: MyYuGothic;
+    font-weight: bold;
+    src: local(YuGothic-Bold), local("Yu Gothic") /*Chrome向け*/
+}
+
+body {
+    font-family: -apple-system,BlackMacSystemFont, "游ゴシック","Yu Gothic",Yu Gothic, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic ProN", "メイリオ",Meiryo, "Noto Sans Japanese","Noto Sans CJK JP", sans-serif;
+    /*Windows 7 8.1*/
+    &[data-os^="Windows"]
+
+{
+    font-family: Helvetica,Meiryo,sans-serif;
+}
+
+/*Windows 10*/
+&[data-os="Windows 10"] {
+    font-family: Helvetica,MyYuGothic,Meiryo,sans-serif;
+}
+}
+
+
+/*3段組み*/
+article p{
+    text-align:center;
+    margin:auto;
+}
+
+#left {
+        float: left;
+        width: 25%;
+        margin: auto;
+    }
+
+#pcright {
+    overflow: hidden;
+    float: right;
+    width: 25%;
+} 
+
+#pcnewarticle {
+        float: initial;
+        width: 74%;
+    }
+
+/*Iframe設定*/
+#pcnewarticle{
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0 0;
+}
+
+#pcnewarticle iframe{
+    position: page;
+    width: 74%;
+    height: 100%;
+
+}

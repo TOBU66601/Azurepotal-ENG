@@ -1,0 +1,14 @@
+﻿article {
+    font-family: 'Yu Gothic UI';
+    width: 90%;
+    margin:auto;
+}
+
+p span #3daime {
+    color:red;
+}
+@font-face {
+    font-family: MyyugoGothic;
+    font-weight: normal;
+    src: local(YuGothic-Medium), local("Yu Gothic Medium");
+}

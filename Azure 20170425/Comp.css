@@ -1,0 +1,165 @@
+﻿@charset "utf-8";
+
+/*翻訳*/
+body #MicrosoftTranslatorWidget {
+    float: right;
+}
+
+body {
+    font-family: 
+        -apple-system,BlinkMacSystemFont, 
+        "游ゴシック","Yu Gothic",Yu Gothic, 
+        "ヒラギノ角ゴ pro w3","Hiragino Kaku Gothic ProN", 
+        "メイリオ",Meiryo, "Noto Sans Japanese", "Noto Sans CJK JP",sans-serif;
+    /*旧OS優先フォント*/
+    &[data-os^="Windows"];
+    font-family: Helvetica, Meiryo,sans-serif;
+/*Windows 10
+                         */
+&[data-os="Windows 10"]; 
+    font-family: Helvetica,Yu Gothic,Meiryo,sans-serif;
+}
+
+
+/*ヘッダー*/
+header h1 {
+    text-align: center;
+    font-family: 'Meiryo';
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+
+    background: #0399fc;
+    text-align:center
+}
+
+.nav {
+    margin: 0 auto;
+    display:inline-block;
+    padding: 0;
+    text-align:center;
+}
+
+    header ul::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+header li {
+    list-style-type: none;
+    text-align: center;
+    width: 16.66%;
+    float: left;
+    background: #0399fc;
+}
+
+header ul li a {
+    display: block;
+    width: 210px;
+    line-height: 50px;
+    margin: 5px;
+    color: white;
+    background: #000080;
+    text-decoration: none;
+}
+
+    header ul li a:hover {
+        background: #7fb3f3;
+    }
+
+
+
+footer {
+    text-align: center;
+    background: #808080;
+}
+
+/*スマホ*/
+@media screen and (max-width:480px) {
+    header {
+        width: 100%;
+    }
+
+        header h1 {
+            float: none;
+            text-align: center;
+        }
+
+        header li {
+            padding: 0;
+            margin: 0;
+            width: 50%;
+        }
+
+        header ul li a {
+            width: 95%;
+            line-height: 50px;
+        }
+}
+
+@media screen and (max-width:320px) {
+    header {
+        width: 100%;
+    }
+
+        header h1 {
+            float: none;
+            text-align: center;
+        }
+
+        header li {
+            padding: 0;
+            margin: 0;
+            width: 50%;
+        }
+
+        header ul li a {
+            width: 95%;
+            margin: 3px;
+            line-height: 40px;
+        }
+}
+
+/*iPad*/
+@media only screen and (min-device-width:481px) {
+    header ul {
+        background: #0399fc;
+        width: auto;
+        padding: 0;
+        margin: auto;
+    }
+
+        header ul::after {
+            clear: both;
+            display: block;
+        }
+
+    header li {
+        list-style-type: none;
+        text-align: center;
+        width: auto;
+        margin: auto;
+        background: #0399fc;
+        font-size: larger;
+    }
+
+    header ul li a {
+        display: block;
+        width: 210px;
+        line-height: 50px;
+        margin: 5px;
+        color: white;
+        background: #000080;
+        text-decoration: none;
+    }
+
+        header ul li a:hover {
+            background: #7fb3f3;
+        }
+}

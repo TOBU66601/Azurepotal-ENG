@@ -1,0 +1,48 @@
+﻿@charset"utf-8";
+
+/*PCでの表示*/
+#menu{
+    border-style:solid;
+    border-width:2px;
+    border-color:aquamarine;
+    width:25%;
+    float:left;
+}
+
+#menu h2{
+    text-align:center;
+    background-color:#78c6fe;
+}
+
+article {
+    float:right;
+    width:74%;
+    clear:right;
+    
+}
+
+
+p{
+    clear:both;
+}
+footer{
+    clear:both;
+}
+
+/*表*/
+.routename{
+    width:100px;
+}
+
+/*スマートフォン表示*/
+@media screen and (max-width:480px){
+    #menu{
+    border-style:solid;
+    border-width:2px;
+    border-color:aquamarine;
+    width:100%;
+}
+    article {
+    width:100%;
+}
+}
